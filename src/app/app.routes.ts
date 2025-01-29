@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { TareasComponent } from './componentes/tareas/tareas.component';
 
 export const routes: Routes = [
   {
@@ -6,6 +7,8 @@ export const routes: Routes = [
     redirectTo: 'folder/inbox',
     pathMatch: 'full',
   },
+  { path: 'componentes/tareas', component: TareasComponent },
+
   {
     path: 'folder/:id',
     loadComponent: () =>

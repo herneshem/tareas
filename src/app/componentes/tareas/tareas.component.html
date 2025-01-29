@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ title }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+
+    <!-- //Usuario -->
+    <ion-card>
+      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+      <ion-card-header>
+        <ion-card-title>Empleado 1</ion-card-title>
+        <ion-card-subtitle>front-end</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Tarea de la semana
+      </ion-card-content>
+    </ion-card>
+
+
+    <!-- Tareas asignadas -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Crear componente</ion-card-title>
+        <ion-card-subtitle>reemplazar</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        reemplazar
+      </ion-card-content>
+    
+      <div class="typeTarea">
+        <ion-button fill="clear" [ngStyle]="pendiente">Pendiente</ion-button>
+        <ion-button fill="clear" [ngStyle]="proceso">En proceso</ion-button>
+        <ion-button fill="clear" [ngStyle]="finalizado">Finalizada</ion-button>
+      </div>
+      
+    </ion-card>
+  </div>
+</ion-content>
